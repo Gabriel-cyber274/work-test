@@ -1,0 +1,231 @@
+.nav {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    box-shadow: 0px 1px 15px grey;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+}
+.nav_part {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.login {
+    background-color: purple;
+    font-size: 0.7rem;
+    color: white;
+    padding: 0.5em;
+    width: 50px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+.supC {
+    width: 70px;
+    height: 25px;
+    border: 1px dashed red;
+    position: relative;
+}
+.supAC {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.supCP1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: green;
+    width: 0;
+    height: 100%;
+    animation: move 0.5s ease-in 1 forwards;
+}
+.sup {
+    display: inline;
+}
+.supCP2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    width: 0;
+    height: 100%;
+    animation: move 0.5s ease-in 1 forwards;
+}
+.supCT {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.hoverC {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+} 
+.hover1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: green;
+    width: 0;
+    height: 100%;
+    animation: move 0.5s ease-in 1 forwards;
+}
+@keyframes move {
+    0%{width: 0%}
+    100%{width: 50%}
+}
+.hover2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    width: 0;
+    height: 100%;
+    animation: move 0.5s ease-in 1 forwards;
+}
+.toogler {
+    width: 32px;
+    position: relative;
+}
+.toogle {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+}
+.topT {
+    position: absolute;
+    top: 0;
+}
+.bottomT {
+    position: absolute;
+    bottom: 0;
+}
+.centerT {
+    position: absolute;
+    top: 11px;
+}
+.hover {
+    display: inline;
+}
+.green {
+    background-color: green;
+}
+.cartC {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.cartC div {
+    background-color: red;
+    width: 15px;
+    height: 17px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    right: -10px;
+    top: 0;
+}
+.ul {
+    display: flex;
+    list-style-type: none;
+    width: 73%;
+    justify-content: space-evenly;
+}
+.ul li {
+    color: #6084a4;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.tooglerS {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.94);
+    width: 100%;
+    height: 70vh;
+    z-index: 1;
+    padding: 20px;
+    top: 55px;
+    color: #6084a4;
+    font-size: 1.5rem;
+}
+.rotateT {
+    transform: rotate(50deg);
+    margin-top: 8px;
+    transition: 0.3s;
+}
+.rotateT2 {
+    opacity: 0;
+    transition: 0.3s;
+}
+.rotateT3 {
+    transform: rotate(-50deg);
+    transition: 0.3s;
+    margin-top: 8px;
+    margin-left: 2px;
+    position: relative;
+}
+@media (max-width: 466px) {
+    .nav_part {
+        width: 40%;
+    }
+    
+}
+@media (max-width:366px) {
+    .nav_part {
+        width: 50%;
+    }
+    
+}
+@media (min-width: 576px) {
+    .nav {
+        justify-content: space-around;
+    }
+    .nav_part {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        justify-content: space-between;
+    }
+    .nav_part {
+        width: 60%;
+    }
+}
+
+@media (min-width: 800px) {
+    .nav {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav {
+        justify-content: space-between;
+        padding: 0.6em;
+    }
+    .nav_part {
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    .ul {
+        width: 60%;
+    }
+}

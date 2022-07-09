@@ -1,0 +1,143 @@
+.section1 {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px 0.3em 50px 0.3em;
+    background-color: whitesmoke;
+}
+.section1 h1 {
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+    color: #0e314c;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section1 p {
+    color: #6084a4;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+.getC {
+    display: flex;
+    justify-content: center;
+}
+.get {
+    width: 130px;
+    height: 40px;
+    background-color: green;
+    border-radius: 5px;
+    cursor: default;
+    position: relative;
+}
+.hoverC  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 5px;
+}
+.inline {
+    display: inline;
+}
+.hover1 {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: purple;
+    animation: move 0.5s ease-in 1 forwards;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+@keyframes move {
+    0% {width: 0;}
+    100% {width: 50%;}
+}
+.hover2 {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: purple;
+    animation: move 0.5s ease-in 1 forwards;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.hoverT {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.centerF {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+    .textC {
+        width: 550px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .textC {
+        width: 81%;
+        margin: 30px;
+    }
+    .section1 {
+        text-align: start;
+    }
+    .getC {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 800px) {
+    .textC {
+        width: 81%;
+        margin: auto;
+    }
+    .section1 {
+        text-align: start;
+    }
+
+    .getC {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 992px) {
+    .textC {
+        width: 100%;
+        margin: auto;
+    }
+    .section1 {
+        text-align: start;
+    }
+
+    .getC {
+        justify-content: start;
+    }
+    .sectionD {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        padding: 0 3rem 0 3rem;
+
+    }
+    .section1 {
+        padding: 10px 0 20px 0;
+    }
+    .section1 h1 {
+        font-size: 3vw;
+    }
+}

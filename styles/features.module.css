@@ -1,0 +1,25 @@
+.animate {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    padding: 40px 0.5em 40px 0.5em;
+    text-align: center;
+    background-color: #dee2e6;
+}
+.container h2 {
+    font-size: 1.5rem;
+    color: #0e314c;
+}
+.container p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #6084a4;
+    margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+    .cont {
+        width: 550px;
+        margin: auto;
+    }
+}
